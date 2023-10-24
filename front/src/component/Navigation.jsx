@@ -1,4 +1,4 @@
-import Button from "./Button";
+import { Link } from "react-scroll";
 
 export default function Navigation({ menuList }) {
   return (
@@ -9,9 +9,16 @@ export default function Navigation({ menuList }) {
       <ul className="flex lg:flex-row flex-col gap-3 lg:pt-0 pt-10 lg:ps-0 ps-5 ">
         {menuList?.map((item, i) => (
           <li key={i}>
-            <button className="px-5 py-2 hover:bg-cyan-200 text-black font-semibold capitalize rounded-md">
+            <Link
+              to={item}
+              spy={true}
+              smooth={true}
+              offset={-65}
+              duration={500}
+              className="px-5 py-2 hover:bg-cyan-500 [&.active]:bg-cyan-500 text-black hover:text-white [&.active]:text-white font-semibold capitalize rounded-md cursor-pointer"
+            >
               {item}
-            </button>
+            </Link>
           </li>
         ))}
       </ul>

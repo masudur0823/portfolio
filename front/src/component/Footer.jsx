@@ -2,6 +2,6 @@
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div className="h-96 bg-red-600">Footer</div>
   )
 }

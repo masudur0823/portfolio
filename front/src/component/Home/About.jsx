@@ -1,6 +1,6 @@
-export default function About({about}) {
+export default function About() {
   return (
-    <div ref={about}  className="h-screen bg-slate-600">
+    <div name="about" className="h-screen bg-slate-600">
       About
     </div>
   );
