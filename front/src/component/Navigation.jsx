@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 export default function Navigation({ menuList }) {
   return (
-    <nav className="lg:static fixed top-0 left-0 lg:bg-transparent bg-red-50 lg:w-auto w-full lg:h-auto h-full">
+    <nav className="lg:static fixed top-0 -left-full lg:bg-transparent bg-red-50 lg:w-auto w-full lg:h-auto h-full z-[900]">
       <button className="lg:hidden flex bg-cyan-500 rounded-full p-1 absolute right-2 top-2">
         <span className="material-symbols-outlined text-black">close</span>
       </button>

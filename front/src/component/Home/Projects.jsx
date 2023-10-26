@@ -1,7 +1,10 @@
+import SectionLayout from "./Layout/SectionLayout";
 
 
 export default function Projects() {
   return (
-    <div name="projects" className="h-screen bg-red-600">Projects</div>
+    <SectionLayout title='Projects' className="">
+
+    </SectionLayout>
   )
 }
