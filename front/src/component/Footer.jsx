@@ -2,6 +2,6 @@
 
 export default function Footer() {
   return (
-    <div className="h-96 bg-red-600">Footer</div>
+    <div className="md:py-16 py-7 bg-cyan-500">Footer</div>
   )
 }

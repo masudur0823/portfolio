@@ -25,8 +25,8 @@ function Banner() {
               </span>
             ))}
           </div>
-          <br />
-          <div>
+         
+          <div className="mt-1">
           {last?.map((item, i) => (
             <span
               key={i}

@@ -1,12 +1,15 @@
 import SectionLayout from "./Layout/SectionLayout";
 
 export default function About() {
+  const aboutText = "Here is the details information about my work journey and skills"
   return (
     <SectionLayout title="About" className="">
-      <p className="md:w-1/2 w-full m-auto text-gray-500 font-regular text-xl text-center px-5">
-        Here you will find more information about me, what I do, and my current
-        skills mostly in terms of programming and technology
+      <p className="md:w-1/2 w-full m-auto text-gray-500 font-regular md:text-xl text-sm text-center px-5">
+        {aboutText}
       </p>
+      <div className="container px-10">
+          
+      </div>
     </SectionLayout>
   );
 }
