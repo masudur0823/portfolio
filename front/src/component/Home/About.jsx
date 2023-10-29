@@ -1,3 +1,4 @@
+import Container from "../Container";
 import SectionLayout from "./Layout/SectionLayout";
 
 export default function About() {
@@ -8,7 +9,7 @@ export default function About() {
       <p className="md:w-1/2 w-full m-auto text-gray-500 font-regular md:text-xl text-sm text-center px-5">
         {aboutText}
       </p>
-      <div className="container mx-auto md:px-10 px-5">
+      <Container>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-10">
           <div>
             <h2 className="text-cyan-500 font-semibold text-md mb-4">
@@ -59,7 +60,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </SectionLayout>
   );
 }
