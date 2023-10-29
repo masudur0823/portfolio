@@ -8,13 +8,13 @@ export default function About() {
       <p className="md:w-1/2 w-full m-auto text-gray-500 font-regular md:text-xl text-sm text-center px-5">
         {aboutText}
       </p>
-      <div className="container mx-auto px-10">
-        <div className="grid grid-cols-2 gap-4 mt-10">
+      <div className="container mx-auto md:px-10 px-5">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-10">
           <div>
             <h2 className="text-cyan-500 font-semibold text-md mb-4">
               About Myself
             </h2>
-            <p className="text-gray-500 pr-20 text-lg">
+            <p className="text-gray-500 md:pr-20 pr-0 text-lg">
               Hi, I'm <b>Kazi Masudur Rahman</b>. I am a professional{" "}
               <b>Web Developer</b> and expert in <b>Frontend technology</b>.{" "}
               <p className="mt-5">
@@ -37,13 +37,23 @@ export default function About() {
           <div>
             <h2 className="text-cyan-500 font-semibold text-md mb-4">Skills</h2>
             <div className="flex justify-center items-center">
-              <div className="skillscontainer">
-                <span className="uppercase bg-cyan-500">html</span>
-                <span className="uppercase bg-cyan-500">css</span>
-                <span className="uppercase bg-cyan-500">Javascript</span>
-                <span className="uppercase bg-cyan-500">React Js</span>
-                <div className="middle">
-                  <p>Web Dev</p>
+              <div className="inline-block border-2 border-cyan-500 md:p-[70px] p-[60px] rounded-full relative">
+                <span className="uppercase bg-cyan-500 text-white absolute py-1 px-5 -left-[25px] top-1/2 -translate-y-1/2 -rotate-45">
+                  html
+                </span>
+                <span className="uppercase bg-cyan-500 text-white absolute py-1 px-5 left-1/2 -bottom-[10px] -translate-x-1/2">
+                  css
+                </span>
+                <span className="uppercase bg-cyan-500 text-white absolute py-1 px-5 -right-[50px] top-1/2 -translate-y-1/2 rotate-45">
+                  Javascript
+                </span>
+                <span className="uppercase bg-cyan-500 text-white absolute py-1 px-5 -top-[10px] left-1/2 -translate-x-1/2">
+                  React Js
+                </span>
+                <div className="w-[100px] h-[100px] bg-cyan-200 rounded-full flex items-center justify-center text-center">
+                  <p className="font-bold uppercase text-xl">
+                    Web <br /> Dev
+                  </p>
                 </div>
               </div>
             </div>
