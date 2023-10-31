@@ -12,12 +12,12 @@ export default function About() {
       <Container>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-10">
           <div>
-            <h2 className="text-cyan-500 font-semibold text-md mb-4">
+            <h2 className="text-cyan-500 font-semibold text-xl mb-4">
               About Myself
             </h2>
             <p className="text-gray-500 md:pr-20 pr-0 text-lg">
               Hi, I'm <b>Kazi Masudur Rahman</b>. I am a professional{" "}
-              <b>Web Developer</b> and expert in <b>Frontend technology</b>.{" "}
+              <b>Web Developer</b>   and expert in <b>Frontend technology</b> with <b>4 years experience</b>.{" "}
               <p className="mt-5">
                 I know how to convert any design using React or React Native or
                 Vue js or Angular . I am an expert on <b>React js</b>.
@@ -36,8 +36,8 @@ export default function About() {
             </p>
           </div>
           <div>
-            <h2 className="text-cyan-500 font-semibold text-md mb-4">Skills</h2>
-            <div className="flex justify-center items-center">
+            <h2 className="text-cyan-500 font-semibold text-xl mb-4">Skills</h2>
+            <div className="flex justify-center items-center h-full">
               <div className="inline-block border-2 border-cyan-500 md:p-[70px] p-[60px] rounded-full relative">
                 <span className="uppercase bg-cyan-500 text-white absolute py-1 px-5 -left-[25px] top-1/2 -translate-y-1/2 -rotate-45">
                   html
