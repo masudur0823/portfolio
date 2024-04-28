@@ -23,7 +23,7 @@ export default function About() {
     "Git",
   ];
   return (
-    <SectionLayout title="About" className="">
+    <SectionLayout title="About">
       <p className="md:w-1/2 w-full m-auto text-gray-500 font-regular md:text-xl text-sm text-center px-5">
         {aboutText}
       </p>

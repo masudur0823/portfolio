@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
-import Button from "../Button";
+import { Button } from "react-scroll";
 import img from "../../assets/images/masud.png";
 
 function Banner() {
@@ -26,7 +25,6 @@ function Banner() {
               </span>
             ))}
           </div>
-
           <div className="mt-1">
             {last?.map((item, i) => (
               <span
@@ -37,23 +35,22 @@ function Banner() {
               </span>
             ))}
           </div>
-
           <h1 className="text-gray-400 sm:text-xl text-sm font-normal my-4">
             A passonate <span>Software Developer</span>
             {/* <span>Frontend Developer</span> <span>FullStack Developer</span> */}
           </h1>
-          <Button onClick={()=> scroll.scrollTo(100)}>
-            {" "}
-            {/* <Link
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={-65}
-              duration={500}
-            > */}
-              View Projects
-            {/* </Link> */}
+          {/* <Button onClick={() => scroll.scrollTo(100)}> */}{" "}
+          <Button
+            className="bg-cyan-500 text-white md:px-10 px-5 md:py-4 py-2 rounded-lg font-semibold"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-65}
+            duration={500}
+          >
+            View Projects
           </Button>
+          {/* </Button> */}
         </div>
         <div>
           <div className="sm:h-80 sm:w-80 w-40 h-40 sm:m-0 m-auto rounded-lg overflow-hidden z-0 relative after:content-[''] after:w-80 after:h-80 after:bg-cyan-500 after:absolute after:left-5 after:top-5 after:-z-[1]">
