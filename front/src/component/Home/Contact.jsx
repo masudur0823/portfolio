@@ -6,25 +6,34 @@ import SectionLayout from "./Layout/SectionLayout";
 
 export default function Contact() {
   const form = useRef();
-  console.log("form:", form.current);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_flkzggh", "template_xk3c8ed", form.current, {
-        publicKey: "Oa8w5esBKyzvmthZY",
-      })
-      .then(
-        (result) => {
-          // console.log("SUCCESS result", result);
-          console.log("SUCCESS!");
-          toast.success("Your message send successfully");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          toast.warn(error.text);
-        }
-      );
+    const hasName = form?.current[0]?.value;
+    const hasEmail = form?.current[1]?.value;
+
+    if (hasName && hasEmail) {
+      emailjs
+        .sendForm("service_flkzggh", "template_xk3c8ed", form?.current, {
+          publicKey: "dNgXdFMoSK9SD2zWV",
+        })
+        .then(
+          (result) => {
+            // console.log("SUCCESS result", result);
+            // console.log("SUCCESS!");
+            if (result) {
+              toast.success("Your message send successfully");
+            }
+          },
+          (error) => {
+            // console.log("FAILED...", error.text);
+            toast.warn(error.text);
+          }
+        );
+    } else {
+      toast.warn("Name and Email filed Required");
+    }
   };
   return (
     <SectionLayout title="Contact">
